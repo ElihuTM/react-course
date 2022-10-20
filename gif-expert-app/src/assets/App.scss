@@ -1,0 +1,21 @@
+@import "./Variables.scss";
+@import "./Utils.scss";
+
+body {
+	font-family: $roboto-slab;
+	background-color: $first-color;
+	color: $fourth-color;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin: 0 auto;
+}
+
+@import "./AddCategory.scss";
+@import "./GifCard.scss";
+@import "./GifGrid.scss";
+@import "./ListCategories.scss";

@@ -1,0 +1,49 @@
+.category-form {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+
+	.category-input-section {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+
+		margin-bottom: .5rem;
+
+		.category-input-text {
+			@extend .input-text;
+
+			flex: 1 1 auto;
+			margin:0 1rem;
+			background-color: $first-color;
+
+			&:hover {
+				background-color: $second-color;
+			}
+		}
+	}
+
+	.category-input-submit {
+		@extend .input-text;
+
+		background-color: $first-color;
+		width: 20%;
+
+		&:hover {
+			background-color: $second-color;
+			color: $fourth-color;
+		}
+
+		@include md {
+			width: 20rem;
+		}
+	}
+}
+
+::placeholder {
+	color: $fourth-color;
+}
+

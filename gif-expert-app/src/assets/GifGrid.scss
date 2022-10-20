@@ -1,0 +1,30 @@
+.category{
+	&-title{
+		display: flex;
+		justify-content: space-between;
+
+		h3 {
+			margin: 0;
+		}
+
+		.delete_btn {
+			margin-left: 1rem;
+			border: 1px solid $third-color;
+			border-radius: .5rem;
+
+			font-size: 1.3rem;
+
+			&:hover {
+				color: $alert-color;
+				border-color: $alert-color;
+			}
+		}
+	}
+
+	&-body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+

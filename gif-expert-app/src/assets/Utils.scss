@@ -1,0 +1,49 @@
+.input-text {
+	border: 1px solid $fourth-color;
+	border-radius: .5rem;
+	height: 2rem;
+
+	padding: 0 .5rem;
+}
+
+//For Extra Small
+@mixin xsm {
+	@media screen and (max-width: ($xsm)) {
+		@content;
+	}
+}
+
+//For Small
+@mixin sm {
+	@media screen and (max-width: ($sm)) {
+		@content;
+	}
+}
+
+//For Medium
+@mixin md {
+	@media screen and (max-width: ($md)) {
+		@content;
+	}
+}
+
+//For large
+@mixin lg {
+	@media screen and (max-width: ($lg)) {
+		@content;
+	}
+}
+
+//For Extra Large
+@mixin xl {
+	@media screen and (max-width: ($xl)) {
+		@content;
+	}
+}
+
+//For Extra Extra Large
+@mixin xxl {
+	@media screen and (max-width: ($xxl)) {
+		@content;
+	}
+}
